@@ -1,0 +1,208 @@
+:root{
+    --main-color: orange;
+}
+
+.text-main{
+    color: var(--main-color);
+}
+
+*{
+    font-family: 'Secular One', sans-serif;
+}
+
+.bg-main{
+    background-color: var(--main-color);
+}
+.nav-hover{
+    transition:0.4s;
+    border-bottom: 2px solid transparent;
+    border-radius: 0px;
+
+}
+
+.nav-hover:hover{
+    border-bottom:2px solid var(--main-color);
+}
+
+#navbar, #logo{
+    transition:0.4s;
+}
+
+.border-bottom-main{
+    border:none !important;
+    border-bottom:4px solid var(--main-color) !important;
+    border-radius: 0px;
+}
+.btn-main{
+    color: whitesmoke;
+    background-color: var(--main-color);
+    border-radius: 0px;
+}
+.btn-main:hover{
+    color: whitesmoke;
+}
+.form-control:focus{
+    box-shadow:none !important;
+}
+.cursor{
+    cursor:pointer;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+      background-image:none !important;
+  }
+  .first-slide{
+    background: linear-gradient(white,rgba(255,255,255,0.2),white),url('../media/1.jpg');
+  }
+  .second-slide{
+    background: linear-gradient(white,rgba(255,255,255,0.2),white),url('../media/2.jpg');
+  }
+  .third-slide{
+    background: linear-gradient(white,rgba(255,255,255,0.2),white),url('../media/3.jpg');
+  }
+
+  .heading{
+    top:120px;
+    z-index:10;
+    left:140px;
+  }
+
+  .h1-custom{
+    font-size:43px;
+    color:var(--main-color);
+}
+
+  @media only screen and (max-width:768px){
+
+  .h1-custom{
+      font-size:40px;
+  }
+  .heading{
+      left:40px;
+  }
+
+}
+
+.wrapper-heading{
+    z-index: 10; 
+    width:40%; left: 30%; top: 20%;
+   }
+
+   .caption-animated{
+    bottom:0px;
+    opacity: 0;
+  }
+  .carousel-item.active .caption-animated{
+    transition:1s;
+    opacity: 1;
+    bottom: 100px;
+  }
+
+  .hr{
+      background-color: var(--main-color);
+      height: 4px;
+      width: 160px;
+      margin-top: 0px;
+      margin-left: 0px;
+
+
+  }
+  .h-120{
+      height: 120px;
+  }
+  .bg-category{
+      background: linear-gradient(120deg, aqua 65%,transparent);
+  }
+  .bg-category2{
+      background: linear-gradient(120deg, cadetblue 65%,transparent);
+  }
+  .bg-category3{
+      background: linear-gradient(120deg, coral 65%,transparent);
+  }
+  .bg-category4{
+      background: linear-gradient(120deg, blanchedalmond 65%,transparent);
+  }
+
+  .card.h-120:hover{
+      transition: 1s;
+      box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.3);
+  }
+  .card-product{
+      height:320px;
+      width: 200px;
+  }
+  .img-product{
+      position: relative;
+      top: 0px;
+      left: 0px;
+      transition: 0,7s;
+      z-index: 99;
+  }
+  .card-product:hover .img-product{
+      top: -30px;
+      left:140px;
+      transform: scale(0.9);
+  }
+  .description-product{
+      position: absolute;
+      width: 80%;
+      opacity: 0;
+  }
+  .card-product:hover .description-product{
+      opacity:1;
+      transition:0,7s;
+  }
+  .btn-circle{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .border-responsive-main{
+      border-bottom: 4px solid var(--main-color);
+      position: relative;
+  }
+
+
+  .dot{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-color:var(--main-color);
+    border-radius: 50%;
+}
+
+  @media only screen and (max-width:768px){
+      .border-responsive-main{
+      border-bottom:none;    
+      border-left: 4px solid var(--main-color);
+      position: relative;
+      }
+
+      .dot{
+        content: "";
+        position: absolute;
+        left: -12px;
+        bottom: 50px;
+    }
+  }
+
+  .slick-prev:before, .slick-next:before{
+      color:var(--main-color) !important;
+  }
+
