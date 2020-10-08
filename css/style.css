@@ -5,6 +5,9 @@
 .text-main{
     color: var(--main-color);
 }
+.par{
+    color:black;
+}
 
 *{
     font-family: 'Secular One', sans-serif;
@@ -144,7 +147,7 @@
       position: relative;
       top: 0px;
       left: 0px;
-      transition: 0,7s;
+      transition: 0.9s;
       z-index: 99;
   }
   .card-product:hover .img-product{
