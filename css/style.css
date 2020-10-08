@@ -152,7 +152,7 @@
   }
   .card-product:hover .img-product{
       top: -30px;
-      left:140px;
+      left:150px;
       transform: scale(0.9);
   }
   .description-product{
